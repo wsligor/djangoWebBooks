@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("Главная страница сайта 'Мир книг'!!!'")
+    return HttpResponse("Главная страница каталога 'Мир книг'!!!'")
