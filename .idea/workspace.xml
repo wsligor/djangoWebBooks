@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6706566-569d-4a7c-a531-53b628443d17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/djangoWebBooks.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/djangoWebBooks.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c6706566-569d-4a7c-a531-53b628443d17" name="Changes" comment="First migrate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
@@ -96,11 +94,24 @@
       <option name="presentableId" value="Default" />
       <updated>1707120826169</updated>
       <workItem from="1707120887982" duration="1600000" />
-      <workItem from="1707128457824" duration="2983000" />
+      <workItem from="1707128457824" duration="4677000" />
     </task>
+    <task id="LOCAL-00001" summary="First migrate">
+      <option name="closed" value="true" />
+      <created>1707136437382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707136437382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First migrate" />
+    <option name="LAST_COMMIT_MESSAGE" value="First migrate" />
   </component>
 </project>
