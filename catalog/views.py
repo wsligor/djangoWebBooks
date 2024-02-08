@@ -1,7 +1,18 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 
 from catalog.models import Book, BookInstance, Author
+
+
+class BookListView(ListView):
+    model = Book
+    context_object_name = 'books'
+
+
+class BookDetailView(DetailView):
+    model = Book
+    context_object_name = 'book'
 
 
 def index(request):

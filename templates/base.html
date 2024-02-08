@@ -14,7 +14,7 @@
                 <img src="{% static 'img/pp100.png' %}" width="70" height="70">
             </div>
             <div class="col-10">
-                <h1>Это шапка с логотипом</h1>
+                <h2 style="font-family: 'Monotype Corsiva'">Мир книг - печатные и электронные интективные книги</h2>
             </div>
         </div>
     </div>
@@ -32,8 +32,8 @@
         <div class="col-2">
             {% block sidebar %}
                 <nav class="nav flex-column">
-                    <a class="nav-link" href="{% url 'index' %}"> Ссылка 1</a>
-                    <a class="nav-link" href="{% url 'index' %}"> Ссылка 2</a>
+                    <a class="nav-link" href="{% url 'books' %}"> Все книги</a>
+                    <a class="nav-link" href="{% url 'index' %}"> Все авторы</a>
                     <a class="nav-link" href="{% url 'index' %}"> Ссылка 3</a>
                 </nav>
             {% endblock sidebar %}
@@ -48,7 +48,7 @@
     <div class="container-fluid">
         <div class="row bg-primary text-center text-white lh-1">
             {% block footer %}
-                <p>Это подвал (footer) всех страниц сайта</p>
+                <p>Copyrigth ООО "А и Ти", 2023.</p>
             {% endblock footer %}
         </div>
     </div>

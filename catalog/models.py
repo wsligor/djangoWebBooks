@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import reverse
 
 
 # Жанры книг
@@ -36,7 +37,7 @@ class Author(models.Model):
                               null=True, blank=True)
 
     def __str__(self):
-        return f'{self.last_name}, {self.first_name}'
+        return {self.last_name}
 
 
 class Book(models.Model):
@@ -65,8 +66,13 @@ class Book(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        # return reverse ('book_detail', args=[str(self.id)])
+        return reverse ('book_detail', args=[str(self.id)])
         pass
+
+    def display_author(self):
+        return ', '.join([author.last_name for author in self.author.all()])
+
+    display_author.short_description = 'Авторы'
 
 
 # состояние экземпляра книги
@@ -94,3 +100,6 @@ class BookInstance(models.Model):
 
     def __str__(self):
         return f'{self.inv_nom}, {self.book}, {self.status}'
+
+    def get_absolute_url(self):
+        return reverse ('book_detail', args=[str(self.id)])
